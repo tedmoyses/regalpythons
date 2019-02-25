@@ -5,37 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-
-</head>
+  <script type="text/javascript" src="/assets/js/site.js" /></script>
+<link rel="stylesheet" href="/assets/css/site.css" /></head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!--<a class="navbar-brand" href="#">Navbar</a>-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-column">
+  <a class="navbar-brand" href="#">Logo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <ul class="navbar-nav ">
+      <li class="nav-item ">
+        <a class="nav-link" href="/index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="available.html">Available</a>
+        <a class="nav-link" href="/available.html">Available</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="/gallery.html">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="shipping.html">Shipping</a>
+        <a class="nav-link" href="/shipping.html">Shipping</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
       </li>
     </ul>
     </form>
   </div>
 </nav>
-  <div class="container">
+  <div class="container-fluid">
     
 
 <div class="row">
@@ -52,8 +52,54 @@
     </div>
 </div>
   </div>
+  <div class="container-fluid d-flex flex-row bg-dark justify-content-center">
+  <div class="footer">
+
+    <div class="item mx-sm-auto d-sm-inline-block">
+      <a href="https://facebook.com/regalpythons"><img src="/assets/images/facebook.svg" alt="" /></a>
+      Find us on facebook<br>
+      facebook.com/regalpythons<br>
+      <a href="https://facebook.com/reglalpythons" class="orange-text">LIKE US NOW<img src="/assets/images/snake.svg" alt="" /></a>
+    </div>
+
+    <div class="item mx-sm-auto d-sm-inline-block">
+      <a href="https://facebook.com/regalpythons"><img src="/assets/images/contact.svg" alt="" /></a>
+      Contact us for more info<br >
+      on our morphs<br>
+      <a href="https://facebook.com/reglalpythons" class="orange-text">CONTACT<img src="/assets/images/snake.svg" alt="" /></a>
+    </div>
+
+    <div class="item mx-sm-auto d-sm-inline-block">
+      <a href="https://facebook.com/regalpythons"><img src="/assets/images/instagram.svg" alt="" /></a>
+      Keep up to date with the latest<br>
+      images on insta<br>
+      <a href="https://facebook.com/reglalpythons" class="orange-text">FOLLOW<img src="/assets/images/snake.svg" alt="" /></a>
+    </div>
+
+  </div>
+</div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" /></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" /></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" /></script>
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-19495647-1']);
+ _gaq.push(['_setDomainName', 'none']);
+ _gaq.push(['_setAllowLinker', true]);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+ // grab active links and set them
+document
+  .querySelectorAll('a[href="' + location.pathname + '"]')
+  .forEach(item => item.classList.add('active'))
+
+</script>
 </body>
 </html>

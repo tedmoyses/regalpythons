@@ -1,0 +1,32 @@
+.navbar-nav a.active {
+	background: url('/assets/images/active_nav.png') 50% 100% no-repeat;
+}
+
+.orange-text {
+	color: orange;
+}
+
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	background-color:transparent;
+	border:1px solid orange;
+	border-radius:100%;
+}
+
+.carousel-indicators li.active {
+	background-color:orange;
+}
+
+.footer .item {
+	width: 14em;
+	display: block;
+	margin: 3em auto;
+	margin-bottom:5em;
+	color:white;
+	text-align: center;
+}
+
+.footer .item .orange-text {
+	font-size: 11px;
+}
