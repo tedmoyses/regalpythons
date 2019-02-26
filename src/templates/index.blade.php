@@ -24,17 +24,45 @@
  </div>
 </div>
 
-<div class="row">
-  <div class="col">
-      <h1>Index/home page</h1>
+<div class="row bg-dark text-light text-center">
+  <div class="col p-3">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
+        Regal Pythons is a hobbyist Ball Python breeder focussing on combining recessive genes to produce new combinations with bright colours and strong contrasting patterns that retain their brilliance through life
+      </p>
+      <p>
+	Surplus animals from these breedings are made available from time to time on this page
+      </p>
+      <p>
+        If you are interested in a particular morph or combo, drop us a line via the Contacts page or on FB messener
       </p>
     </div>
 </div>
+<div class="row">
+  <div class="col-md-7 index-orange-snake">
+    &nbsp;
+  </div>
+  <div class="col-md-5 text-center index-text-right">
+    <h2 class="orange-text">New In!</h2>
+    <p>2013 100% Het Lavender Albino Male <br>
+      Weight: 400g Sire: 2009-LAV-01<br>
+      Morph ID: 2013-HETLAV-01<br>
+      Hatch Date: 2013-11-04<br>
+      Dam: 2007-HLAV-01<br>
+      <span class="orange-text">£300<img src="/assets/images/Arrow-01.svg" class="arrow" /></span>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-5 text-center index-text-left">
+    <h2 class="orange-text">World first pictures</h2>
+    <p>Take a look at the huge collection of stunning <br>
+      pythons produced here at Regal Pythons<br>
+      <span class="orange-text">£300<img src="/assets/images/Arrow-01.svg" class="arrow" /></span>
+    </p>
+  </div>
+  <div class="col-md-7 index-yellow-snake ">
+    &nbsp;
+ </div>
+</div>
+@
 @endsection

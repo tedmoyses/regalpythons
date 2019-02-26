@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
     <ul class="navbar-nav ">
       <li class="nav-item ">
-        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/available.html">Available</a>
@@ -16,7 +16,10 @@
         <a class="nav-link" href="/gallery.html">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/shipping.html">Shipping</a>
+        <a class="nav-link" href="/news.html">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/terms.html">Terms</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/contact.html">Contact</a>
