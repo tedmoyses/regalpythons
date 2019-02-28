@@ -5,18 +5,22 @@
 
 @section('content')
 
+<div class="container">
+  <div class="row">
+    <div class="col-12 py-5">
+      <h2>Contact us</h2>
 
-<div class="row">
-  <div class="col">
-      <h1>Contact page</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
+        Contact us on our facebook page or messenger 
+        <a href="https://m.facebook.com/regalpythons" class="d-md-none">facebook.com/regalpythons</a>
+        <a href="https://www.facebook.com/regalpythons" class="d-none d-md-inline">facebook.com/regalpythons</a>
       </p>
+
+      <p>
+       Alternatively you can <a href="mailto:regal@regalpythons.com">Email us</a>
+      </p>
+
     </div>
+  </div>
 </div>
 @endsection
