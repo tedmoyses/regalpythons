@@ -26,7 +26,7 @@
 
 <div class="container-fluid">
   <div class="row bg-dark text-light text-center">
-    <div class="col ">
+    <div class="col py-5">
         <p>
           Regal Pythons is a hobbyist Ball Python breeder focussing on combining recessive genes to produce new combinations with bright colours and strong contrasting patterns that retain their brilliance through life
         </p>

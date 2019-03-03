@@ -25,21 +25,6 @@
 	background-color:orange;
 }
 
-.index-orange-snake {
-	background: url('/assets/images/index_orange3.jpg') -8em 0em no-repeat
-}
-
-.index-yellow-snake {
-	background: url('/assets/images/index_yellow1.jpg') 9em 0em no-repeat;
-}
-
-.index-text-right {
-	padding: 15em 0em;
-}
-
-.index-text-left {
-	padding: 12em 0em;
-}
 
 .footer .item {
 	width: 14em;

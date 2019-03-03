@@ -17,7 +17,9 @@
   @script(https://code.jquery.com/jquery-3.2.1.slim.min.js)
   @script(https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js)
   @script(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js)
-
+  @script(https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js)
+  <script> var exports = {} // quick fix because 'exports' is not defined in rich-text bundle below</script>
+  <script src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js" ></script>
 <script type="text/javascript">
 
  var _gaq = _gaq || [];
