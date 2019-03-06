@@ -2,7 +2,8 @@
     "name": "tedmoyses/regalpythons.com",
     "description": "Static website for regalpythons.com",
     "require": {
-        "tedmoyses/glomr": "^0.0.2"
+        "tedmoyses/glomr": "^0.0.2",
+        "contentful/contentful": "^4.1"
     },
     "authors": [
         {

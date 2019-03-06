@@ -1,22 +1,43 @@
 
 @extends('layout')
 
-@section('title', 'index page')
+@section('title', 'Animals available right now')
 
 @section('content')
 
+<?php 
 
-<div class="row">
-  <div class="col">
-      <h1>Available page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
+$client = new \Contentful\Delivery\Client('aee68d919f9e8d3ec12aee90df4a90a129d86631980ab98f272a88be50f163be', 's0ljm28rcwdf', 'master');
+
+$query = new \Contentful\Delivery\Query();
+$query->setContentType('available')
+    ->orderBy('sys.createdAt');
+
+$animals = $client->getEntries($query);
+
+?>
+<div class="container-fluid bg-light p-5">
+  <div class="row">
+      <h1 class="col-12">Available animals</h1>
+      @forelse ($animals as $animal)
+				<div class="col-md-3 snake-card bg-white" >
+          <div class="inner p-3">
+						<img src="{{ $animal->getImage()[0]->getFile()->getUrl() }}" alt="{{ $animal->getMorphtitle() }}" class="img-fluid pb-4" />
+						<b class="d-inline-block pb-4">{{ $animal->getMorphtitle() }}</b>
+						<table class="table">
+							<tr><td class="orange-text ">Weight:</td>     <td class="" >{{ $animal->getWeight() }}g</td></tr>
+							<tr><td class="orange-text ">SireId:</td>     <td class="" >{{ $animal->getSireid() }}g</td></tr>
+							<tr><td class="orange-text ">Hatch date:</td> <td class="" >{{ $animal->getHatchdate() }}g</td></tr>
+						</table>
+					</div>
+					<p class="footer d-flex justify-content-between">
+						<span class="price">&pound;{{ $animal->getPrice()}}</span>
+						<svg class="arrow" viewBox="0 0 62.17 24.66"><use xlink:href="/assets/images/Arrow-02.svg#Layer_1"></use></svg>
+					</p>
+        </div>
+      @empty
+        <div class="col-12"><p>No Animals - sorry</p></div>
+        @endforelse
+  </div>
 </div>
 @endsection
