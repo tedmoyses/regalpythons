@@ -3,7 +3,8 @@
     "description": "Static website for regalpythons.com",
     "require": {
         "tedmoyses/glomr": "^0.0.2",
-        "contentful/contentful": "^4.1"
+        "contentful/contentful": "^4.1",
+        "league/flysystem-aws-s3-v3": "^1.0"
     },
     "authors": [
         {
