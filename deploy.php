@@ -57,7 +57,7 @@ echo "Done!\n";
 /*
  * Push each local file to the remote destinaion
  */
-foreach($local->listContents(__DIR__, true) as $file){
+foreach($local->listContents('.', true) as $file){
 	if($file['type'] === 'file') $remote->put($file['path'], $local->read($file['path'], ['visibility' => 'public']));
 	echo "Pushed remote file: ${file['path']}\n";
 }
