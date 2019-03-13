@@ -48,7 +48,7 @@ $local = new Filesystem($source);
  * Remove all remote files for a clean site with no stale files
  */
 echo "Cleaning remote files...";
-foreach($remote->listContents() as $file){
+foreach($remote->listContents(__DIR__) as $file){
 	if($file['type'] === 'file') $remote->delete($file['path']);
 	if($file['type'] === 'dir') $remote->deleteDir($file['path']);
 }
@@ -57,7 +57,7 @@ echo "Done!\n";
 /*
  * Push each local file to the remote destinaion
  */
-foreach($local->listContents('.', true) as $file){
+foreach($local->listContents(__DIR__, true) as $file){
 	if($file['type'] === 'file') $remote->put($file['path'], $local->read($file['path'], ['visibility' => 'public']));
 	echo "Pushed remote file: ${file['path']}\n";
 }
