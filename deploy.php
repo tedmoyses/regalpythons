@@ -48,7 +48,7 @@ $local = new Filesystem($source);
  * Remove all remote files for a clean site with no stale files
  */
 echo "Cleaning remote files...";
-foreach($remote->listContents(__DIR__) as $file){
+foreach($remote->listContents() as $file){
 	if($file['type'] === 'file') $remote->delete($file['path']);
 	if($file['type'] === 'dir') $remote->deleteDir($file['path']);
 }
