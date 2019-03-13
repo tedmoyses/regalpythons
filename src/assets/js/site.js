@@ -11,4 +11,4 @@ const renderContentfulImage = function(node, width, attributes){
   return `<img src="${node.data.target.fields.file.url}${width}" alt="${node.data.target.fields.title}" ${attributesStr} />`;
 }
 
-
+console.log("testbuild");
