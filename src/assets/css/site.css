@@ -1,3 +1,24 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* override boostrap styles */
+.bg-dark {
+	background-color: #1a1a1a !important;
+}
+
+.navbar-brand .regal, .navbar-brand .pythons {
+    text-transform: uppercase;
+    font-size: .6em;
+    display: block;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+.navbar-brand .regal {
+	letter-spacing: 0.38em;
+}
+
 .navbar-nav a.active {
 	background: url('/assets/images/active_nav.png') 50% 100% no-repeat;
 }
@@ -5,24 +26,43 @@
 @media (max-width: 786px) {
 	.navbar-nav a.active {
 		background: url(/assets/images/active_nav.png) -0% 40% no-repeat;
-                padding-left: 20px;
+    padding-left: 20px;
+	}
+}
+
+.hero-text {
+  background-color: rgba(15,15,15,0.6) !important;
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	width: 100%
+}
+
+@media (max-width: 1024px) {
+	.hero-text {
+		background-color: #1a1a1a !important;
+		position: static;
+		bottom: 0px;
+		color: white;
+		width: 100%
 	}
 }
 
 .orange-text {
-	color: orange;
+	color: #f7931e;
+	fill: #f7931e;
 }
 
 .carousel-indicators li {
 	width: 10px;
 	height: 10px;
 	background-color:transparent;
-	border:1px solid orange;
+	border:1px solid #f7931e;
 	border-radius:100%;
 }
 
 .carousel-indicators li.active {
-	background-color:orange;
+	background-color: #f7931e;
 }
 
 
@@ -47,7 +87,7 @@
 
 .arrow {
 	height: 0.8em;
-	margin:0.4em;
+	fill: inherit;
 }
 
 .snake-card {
@@ -56,14 +96,11 @@
 }
 
 .snake-card .footer {
-	background: orange;
+	background: #f7931e;
 	padding: 0.5em;
 	color:white;
 	font-weight:bold;
 	font-size: 2em;	margin: 0px;
-}
-
-.snake-card .footer .arrow {
-	fill:white;
+	fill: white;
 }
 

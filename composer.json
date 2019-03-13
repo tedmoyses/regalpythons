@@ -2,7 +2,7 @@
     "name": "tedmoyses/regalpythons.com",
     "description": "Static website for regalpythons.com",
     "require": {
-        "tedmoyses/glomr": "^0.0.2",
+        "tedmoyses/glomr": "^0.0.7",
         "contentful/contentful": "^4.1",
         "league/flysystem-aws-s3-v3": "^1.0"
     },

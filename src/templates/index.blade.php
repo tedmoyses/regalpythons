@@ -20,25 +20,27 @@
     </div>
       <div class="carousel-item ">
       <img src="/assets/images/slide3.jpg" alt="third slide" class="d-block w-100" />
-    </div>
- </div>
-</div>
-
-<div class="container-fluid">
-  <div class="row bg-dark text-light text-center">
-    <div class="col py-5">
+		</div>
+    <div class="text-center text-white hero-text font-weight-bold" >
+			<div class="col-md-9 mx-auto py-5">
+        <h2>What we do</h2>
         <p>
-          Regal Pythons is a hobbyist Ball Python breeder focussing on combining recessive genes to produce new combinations with bright colours and strong contrasting patterns that retain their brilliance through life
+					Regal Pythons is a hobbyist Ball Python breeder focussing on combining recessive genes to produce new combinations with bright colours and strong contrasting patterns that retain their brilliance through life <br>
+          <a href="/available.html" class="orange-text">See availability @include('arrow')</a>
         </p>
-        <p>
+        <!--<p>
     Surplus animals from these breedings are made available from time to time on this page
         </p>
         <p>
           If you are interested in a particular morph or combo, drop us a line via the Contacts page or on FB messener
-        </p>
-      </div>
-  </div>
-  <div class="row">
+        </p>-->
+        </div>
+     </div>
+ </div>
+</div>
+
+<div class="container-fluid">
+ <div class="row">
     <div class="col-md-7 pl-0">
       <img src="/assets/images/index_orange3.jpg" alt="" class="img-fluid" />
     </div>
@@ -50,7 +52,7 @@
           Morph ID: 2013-HETLAV-01<br>
           Hatch Date: 2013-11-04<br>
           Dam: 2007-HLAV-01<br>
-          <span class="orange-text">£300<img src="/assets/images/Arrow-01.svg" class="arrow" /></span>
+          <span class="orange-text">£300 @include('arrow')</span>
         </p>
       </div>
     </div>
@@ -61,7 +63,7 @@
         <h2 class="orange-text">World first pictures</h2>
         <p>Take a look at the huge collection of stunning <br>
           pythons produced here at Regal Pythons<br>
-          <span class="orange-text">Gallery<img src="/assets/images/Arrow-01.svg" class="arrow" /></span>
+					<span class="orange-text">Gallery @include('arrow')</span>
         </p>
       </div>
     </div>
