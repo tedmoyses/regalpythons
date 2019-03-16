@@ -21,7 +21,7 @@
   @script(https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js)
   <script> var exports = {} // quick fix because 'exports' is not defined in rich-text bundle below</script>
   @script(https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js)
-<script type="text/javascript">
+  <script type="text/javascript">
 
  var _gaq = _gaq || [];
  _gaq.push(['_setAccount', 'UA-19495647-1']);

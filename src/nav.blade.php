@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-	<a class="navbar-brand" href="#">
-    <span class="regal">regal</span>
-    <span class="pythons orange-text">pythons</span>
+	<a class="navbar-brand mx-md-5 my-md-4" href="#">
+    <img src="/assets/images/Logo-Horizontal-White-01-02-04.svg" class="img-fluid ml-md-5">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -29,5 +28,6 @@
       </li>
     </ul>
     </form>
-  </div>
+	</div>
+	<div class="navbar-brand">&nbsp;</div>
 </nav>

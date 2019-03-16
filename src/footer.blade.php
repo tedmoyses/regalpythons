@@ -12,10 +12,10 @@
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">
-		<a href="mailto:mark@regalpythons.com"><img src="/assets/images/Phone-06.svg" alt="" class="icon" /></a>
+		<a href="mailto:regal@regalpythons.com"><img src="/assets/images/Phone-06.svg" alt="" class="icon" /></a>
       Contact us for more info<br >
       on our morphs<br>
-      <a href="https://facebook.com/reglalpythons" class="orange-text">CONTACT @include('arrow')</a>
+      <a href="mailto:regal@regalpyhtons.com" class="orange-text">CONTACT @include('arrow')</a>
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">
@@ -24,6 +24,14 @@
       latest images on insta<br>
       <a href="https://facebook.com/reglalpythons" class="orange-text">FOLLOW @include('arrow')</a>
     </div>
+
+	 <div class="item mx-sm-auto d-sm-inline-block">
+      <a href="https://www.morphmarket.com/stores/regalpythonsuk/?cat=reps"><img src="/assets/images/MorphmarketM-02.svg" alt="" class="icon" /></a>
+			See our animals on a<br>
+      specialised buying platform<br>
+      <a href="https://www.morphmarket.com/stores/regalpythonsuk/?cat=reps" class="orange-text">BUY @include('arrow')</a>
+    </div>
+
 
   </div>
 </div>
