@@ -12,7 +12,7 @@
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">
-		<a href="mailto:regal@regalpythons.com"><img src="/assets/images/Phone-06.svg" alt="" class="icon" /></a>
+		<a href="mailto:regal@regalpythons.com"><img src="/assets/images/@-01.svg" alt="" class="icon" /></a>
       Contact us for more info<br >
       on our morphs<br>
       <a href="mailto:regal@regalpyhtons.com" class="orange-text">CONTACT @include('arrow')</a>
