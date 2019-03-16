@@ -47,12 +47,13 @@ $local = new Filesystem($source);
 /*
  * Remove all remote files for a clean site with no stale files
  */
-echo "Cleaning remote files...";
+echo "Cleaning remote files\n";
 foreach($remote->listContents() as $file){
 	if($file['type'] === 'file') $remote->delete($file['path']);
 	if($file['type'] === 'dir') $remote->deleteDir($file['path']);
+	echo ".";
 }
-echo "Done!\n";
+echo "\nDone!\n";
 
 /*
  * Push each local file to the remote destinaion
