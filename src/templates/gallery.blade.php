@@ -19,6 +19,8 @@ $items = $client->getEntries($query);
 <div class="container-fluid bg-light p-5">
   <div class="row">
 			<h1 class="col-12">Gallery page</h1>
+			<p class="col-12">Over a decade of breeding rare ball python morphs has produced some astounding animals and some world firsts</p>
+      <p class="col-12">We hope you enjoy exploring our favorite photos of our animals, please get in touch if anything catches your interest</p>
 			@forelse($items as $item)
 				<div class="col-md-3 p-33 gallery-item">
 					<img src="{{ $item->getImage()->getFile()->getUrl()  }}" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-image="{{ $item->getImage()->getFile()->getUrl() }}" style="cursor:pointer"/>

@@ -25,18 +25,12 @@
 			<div class="col-md-9 mx-auto py-5">
         <h2>What we do</h2>
         <p>
-					Regal Pythons is a hobbyist Ball Python breeder focussing on combining recessive genes to produce new combinations with bright colours and strong contrasting patterns that retain their brilliance through life <br>
+					Regal Pythons is a hobbyist Ball Python breeder focussing on combining recessive genes to produce bright, high contrast combinations that retain their brilliance through life <br>
           <a href="/available.html" class="orange-text">See availability @include('arrow')</a>
         </p>
-        <!--<p>
-    Surplus animals from these breedings are made available from time to time on this page
-        </p>
-        <p>
-          If you are interested in a particular morph or combo, drop us a line via the Contacts page or on FB messener
-        </p>-->
-        </div>
-     </div>
- </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid">
@@ -52,7 +46,7 @@
           Morph ID: 2013-HETLAV-01<br>
           Hatch Date: 2013-11-04<br>
           Dam: 2007-HLAV-01<br>
-          <span class="orange-text">£300 @include('arrow')</span>
+          <span class="orange-text">See available @include('arrow')</span>
         </p>
       </div>
     </div>
@@ -61,9 +55,9 @@
     <div class="col-md-5 d-flex">
       <div class="mx-auto justify-content-center align-self-center text-center">
         <h2 class="orange-text">World first pictures</h2>
-        <p>Take a look at the huge collection of stunning <br>
-          pythons produced here at Regal Pythons<br>
-					<span class="orange-text">Gallery @include('arrow')</span>
+        <p>Take a look at our stunning world<br>
+          firsts produced here at Regal Pythons<br>
+					<a href="/gallery.html" class="orange-text">Gallery @include('arrow')</a>
         </p>
       </div>
     </div>

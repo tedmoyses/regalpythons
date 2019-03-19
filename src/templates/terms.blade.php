@@ -31,7 +31,7 @@
       It is the customer’s responsibility to learn how to properly care for the animals they purchase.  We can not take responsibility for a person’s lack of knowledge or poor husbandry skills.  If we determine that a customer lacks the proper experience or facilities to care for an animal, the transaction will be terminated.
       </p>
 
-      <h3>GENETIC GUARANTEE Certificates</h3>
+      <h3>GENETIC GUARANTEE CERTIFICATES</h3>
 
       <p>
       Every heterozygous (het) gene carrier produced here at Regal Pythons is immediately photographed and assigned a unique ID code.  Your invoice will come with a photographed certificate detailing the genetics of any heterozygous animals you purchase.  We have photo archives of every het we have ever produced or sold. 
