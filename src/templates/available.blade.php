@@ -31,8 +31,8 @@ $animals = $client->getEntries($query);
 						</table>			
 					</div>
 					<p class="footer d-flex justify-content-between">
-						<a href="mailto:regal@regalpythons.com?subject={{ urlencode('Interested in ' . $animal->getMorphid()) }}" class="price">&pound;{{ $animal->getPrice()}}</a>
-						<a href="mailto:regal@regalpythons.com?subject={{ urlencode('Interested in ' . $animal->getMorphid()) }}"><svg class="arrow" viewBox="0 0 62.17 24.66"><use xlink:href="/assets/images/Arrow-02.svg#Layer_1"></use></svg></a>
+						<a href="mailto:regal@regalpythons.com?subject={{ rawurlencode('Interested in ' . $animal->getMorphid()) }}" class="price">&pound;{{ $animal->getPrice()}}</a>
+						<a href="mailto:regal@regalpythons.com?subject={{ rawurlencode('Interested in ' . $animal->getMorphid()) }}"><svg class="arrow" viewBox="0 0 62.17 24.66"><use xlink:href="/assets/images/Arrow-02.svg#Layer_1"></use></svg></a>
 					</p>
 			 </div>
       @empty
