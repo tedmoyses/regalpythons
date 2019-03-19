@@ -10,5 +10,10 @@
 		"port": 8080,
 		"script": ""
 	},
-  "interval": 500
+  "interval": 500,
+	"vars": {
+		"contentfulApiKey": "aee68d919f9e8d3ec12aee90df4a90a129d86631980ab98f272a88be50f163be",
+		"contentfulSpaceId":"s0ljm28rcwdf",
+		"contentfulEnvironment": "master"
+	}
 }

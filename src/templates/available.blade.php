@@ -31,13 +31,13 @@ $animals = $client->getEntries($query);
 						</table>			
 					</div>
 					<p class="footer d-flex justify-content-between">
-						<span class="price">&pound;{{ $animal->getPrice()}}</span>
-						<svg class="arrow" viewBox="0 0 62.17 24.66"><use xlink:href="/assets/images/Arrow-02.svg#Layer_1"></use></svg>
+						<a href="mailto://regal@regalpythons.com?subject={{ urlencode('Interested in ' . $animal->getMorphid()) }}" class="price">&pound;{{ $animal->getPrice()}}</a>
+						<a href="mailto://regal@regalpythons.com?subject={{ urlencode('Interested in ' . $animal->getMorphid()) }}"><svg class="arrow" viewBox="0 0 62.17 24.66"><use xlink:href="/assets/images/Arrow-02.svg#Layer_1"></use></svg></a>
 					</p>
 			 </div>
       @empty
         <div class="col-12"><p>No Animals - sorry</p></div>
-        @endforelse
+      @endforelse
   </div>
 </div>
 @endsection

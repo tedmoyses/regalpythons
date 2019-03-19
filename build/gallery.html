@@ -1,3 +1,21 @@
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  $('#imageModal').on('show.bs.modal', function (event) {
+    $('#modal-image').attr('src', $(event.relatedTarget).data('image'))
+  })
+})
+</script>
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg h-100 d-flex flex-column justify-content-center my-0" role="dialog">
+    <div class="modal-content ">
+      <div class="modal-body ">
+        <img src="" id="modal-image" data-dismiss="modal" class="img-fluid " />
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +25,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
 	<link rel="stylesheet" href="/assets/css/site.css" />
-<script type="text/javascript" src="/assets/js/168510d-site.js" /></script>
 <script type="text/javascript" src="/assets/js/site.js" /></script></head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -46,18 +63,31 @@
   
   
 
-<div class="row">
-  <div class="col">
-      <h1>Gallery page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
+
+<div class="container-fluid bg-light p-5">
+  <div class="row">
+			<h1 class="col-12">Gallery page</h1>
+							<div class="col-md-3 p-33 gallery-item">
+					<img src="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" style="cursor:pointer"/>
+					<div class="bg-white p-3"><b>Test image</b></div>
+				</div>
+							<div class="col-md-3 p-33 gallery-item">
+					<img src="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" style="cursor:pointer"/>
+					<div class="bg-white p-3"><b>Test image</b></div>
+				</div>
+							<div class="col-md-3 p-33 gallery-item">
+					<img src="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" style="cursor:pointer"/>
+					<div class="bg-white p-3"><b>Test image</b></div>
+				</div>
+							<div class="col-md-3 p-33 gallery-item">
+					<img src="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" style="cursor:pointer"/>
+					<div class="bg-white p-3"><b>Test image</b></div>
+				</div>
+							<div class="col-md-3 p-33 gallery-item">
+					<img src="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" style="cursor:pointer"/>
+					<div class="bg-white p-3"><b>Test image</b></div>
+				</div>
+			    </div>
 </div>
   
   <div class="container-fluid d-flex flex-row bg-dark justify-content-center">

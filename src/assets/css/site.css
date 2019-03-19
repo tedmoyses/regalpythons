@@ -105,6 +105,11 @@ body {
 	fill: white;
 }
 
+.snake-card .footer a {
+	color:white !important;
+	text-decoration: none;
+}
+
 .snake-card .footer .arrow {
 	position: relative;
 	top: 0.3em;
