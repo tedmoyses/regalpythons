@@ -46,43 +46,75 @@
   <div class="container">
   <div class="row">
     <div class="col-12 py-5" id="content">
-      <h2>Latest news</h2>
-    </div>
-  </div>
+			<h2>Latest news</h2>
+						<div class="news-item border-bottom py-4"><h3>2018/2019 Breeding Season Updates</h3><p>It’s a pretty late season by our standards but lots of good locks, building, a few ovulations and one prelay shed so far.</p><img src="//images.ctfassets.net/s0ljm28rcwdf/3PnUaxBXA1STOB3K8bP1SM/fceaf973204f302167ad7e43078b8e2e/IMG-20190224-WA0013.jpg?w=150" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/3PnUaxBXA1STOB3K8bP1SM/fceaf973204f302167ad7e43078b8e2e/IMG-20190224-WA0013.jpg" style="cursor:pointer" /><p></p><p>We are focusing on our Ultramel Tristripe, Toffee Tristripe, Pastel Desert Ghost Tristripe, Lemon Pastel Tristripe, Ultramel Pied and various Desert Ghost combos including Hurricane, Orange Dream, Leopard, Butter and Pastel.</p><p>Fingers crossed for moving some of these long term projects forward!</p><p></p><p></p></div>
+						<div class="news-item border-bottom py-4"><h3>I made another blog post - and I can edit it</h3><p><strong>This is alright this!</strong></p><img src="//images.ctfassets.net/s0ljm28rcwdf/31ErmCszXyZrHIUfmhkt6p/d25a6a453aa114ff44997c72371b9bde/IMG-20190224-WA0011.jpg?w=150" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/31ErmCszXyZrHIUfmhkt6p/d25a6a453aa114ff44997c72371b9bde/IMG-20190224-WA0011.jpg" style="cursor:pointer" /><p></p><p>And now some more text</p><img src="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg?w=150" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/26ydb6Lhkrl4d5b1ieoHa1/35f4a7160f4a0693698d987326b2d29a/IMG-20190224-WA0009.jpg" style="cursor:pointer" /><p></p></div>
+						<div class="news-item border-bottom py-4"><h3>New website launched!</h3><p>Wahoo!</p><p>We have a new website <a href="/terms.html" title="">Link!</a></p><img src="//images.ctfassets.net/s0ljm28rcwdf/7zfLb3x5jTt0XSXhwaZEXK/e78cf540932b423d08fe359a3361d715/IMG-20190223-WA0050.jpg?w=150" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/7zfLb3x5jTt0XSXhwaZEXK/e78cf540932b423d08fe359a3361d715/IMG-20190223-WA0050.jpg" style="cursor:pointer" /><p></p></div>
+						<div class="news-item border-bottom py-4"><h3>2018/2019 Breeding Season Updates</h3><p>It’s a pretty late season by our standards but lots of good locks, building, a few ovulations and one prelay shed so far.</p><img src="//images.ctfassets.net/s0ljm28rcwdf/3PnUaxBXA1STOB3K8bP1SM/fceaf973204f302167ad7e43078b8e2e/IMG-20190224-WA0013.jpg?w=150" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/3PnUaxBXA1STOB3K8bP1SM/fceaf973204f302167ad7e43078b8e2e/IMG-20190224-WA0013.jpg" style="cursor:pointer" /><p></p><p>We are focusing on our Ultramel Tristripe, Toffee Tristripe, Pastel Desert Ghost Tristripe, Lemon Pastel Tristripe, Ultramel Pied and various Desert Ghost combos including Hurricane, Orange Dream, Leopard, Butter and Pastel.</p><p>Fingers crossed for moving some of these long term projects forward!</p><p></p><p></p></div>
+						<div class="news-item border-bottom py-4"><h3>New website launched!</h3><p>Wahoo!</p><p>We have a new website <a href="/terms.html" title="">Link!</a></p><img src="//images.ctfassets.net/s0ljm28rcwdf/7zfLb3x5jTt0XSXhwaZEXK/e78cf540932b423d08fe359a3361d715/IMG-20190223-WA0050.jpg?w=150" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-image="//images.ctfassets.net/s0ljm28rcwdf/7zfLb3x5jTt0XSXhwaZEXK/e78cf540932b423d08fe359a3361d715/IMG-20190223-WA0050.jpg" style="cursor:pointer" /><p></p></div>
+			    </div>
+	</div>
+  <div class="row text-center"><img src="/assets/images/ajax-loader.gif" class="d-none" id="newsloader" style="margin:1em auto"/></div>
 </div> 
 
 <script type="module">
 document.addEventListener('DOMContentLoaded', function() {
-  const client = contentful.createClient({
-    space: 's0ljm28rcwdf',
-    environment: 'master',
-    accessToken: 'aee68d919f9e8d3ec12aee90df4a90a129d86631980ab98f272a88be50f163be'
-  })
+	var pageNumber = 1;
+	var allowScroll = 1 ;
+	const pageSize = 5
+	const holder = document.getElementById('content');
+	const loader = document.getElementById('newsloader');
 
-  client.getEntries({
-    content_type: 'news',
-    order: '-sys.createdAt'
-  })
-  .then(function(response) {
-    var holder = document.getElementById('content');
-    const options = {
-      renderNode: {
-        ["embedded-asset-block"]: function(node){
-          return renderContentfulImage(node, 150, {"class":"img-thumbnail", "data-toggle":"modal", "data-target":"#imageModal", "data-image":node.data.target.fields.file.url, style:"cursor:pointer"});
-        }
-      }
-    };
-    for(var i = 0; i < response.items.length; i++){
-      var item = response.items[i] 
-      var headline = item.fields.headline
-      var article = documentToHtmlString(item.fields.article, options)
-      holder.insertAdjacentHTML('beforeEnd', `<div class="news-item border-bottom py-4">
-        <h3>${headline}</h3>
-        ${article}
-      </div>`);
-    }
-  })
-  .catch(console.error)
+	const client = contentful.createClient({
+		space: 's0ljm28rcwdf',
+		environment: 'master',
+		accessToken: 'aee68d919f9e8d3ec12aee90df4a90a129d86631980ab98f272a88be50f163be'
+	});
+	const renderOptions = {
+		renderNode: {
+			["embedded-asset-block"]: function(node){
+				return renderContentfulImage(node, 150, {"class":"img-thumbnail", "data-toggle":"modal", "data-target":"#imageModal", "data-image":node.data.target.fields.file.url, style:"cursor:pointer"});
+			}
+		}
+	};
+	
+	document.addEventListener('scroll', function(){
+		var lastElement = document.querySelector('#content div:last-child');
+		var lastElementOffset = lastElement.offsetTop - lastElement.clientHeight;
+		var pageOffset = window.pageYOffset + window.innerHeight;
+
+		if(allowScroll && pageOffset > lastElement.offsetTop + lastElement.clientHeight + 250){
+			console.log('loading')
+			loadMoreNews();
+		}
+	})
+	
+	function loadMoreNews() {
+		allowScroll = false;
+		loader.classList.remove('d-none');
+		client.getEntries({
+			content_type: 'news',
+				order: '-sys.createdAt',
+				limit: pageSize,
+				skip: pageNumber * pageSize
+		})
+		.then(function(response) {
+			for(var i = 0; i < response.items.length; i++){
+				var headline = response.items[i].fields.headline
+				var article = documentToHtmlString(response.items[i].fields.article, renderOptions)
+				holder.insertAdjacentHTML('beforeEnd', `<div class="news-item border-bottom py-4">
+					<h3>${headline}</h3>
+					${article}
+					</div>`);
+			}
+			if(response.items.length === pageSize) {
+				pageNumber++;
+				allowScroll = true;
+			}
+			loader.classList.add('d-none');
+		})
+		.catch(console.error)
+	}
 })
 </script>
 

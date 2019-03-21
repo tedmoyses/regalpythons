@@ -7,7 +7,7 @@
 
 <?php 
 
-$client = new \Contentful\Delivery\Client('aee68d919f9e8d3ec12aee90df4a90a129d86631980ab98f272a88be50f163be', 's0ljm28rcwdf', 'master');
+$client = new \Contentful\Delivery\Client($contentfulApiKey, $contentfulSpaceId, $contentfulEnvironment);
 
 $query = new \Contentful\Delivery\Query();
 $query->setContentType('available')

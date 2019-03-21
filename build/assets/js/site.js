@@ -1,7 +1,7 @@
 /**
  * functions for handling images from contentful
  */
-const renderContentfulImage = function(node, width, attributes){
+function renderContentfulImage(node, width, attributes){
   var width = width !== null ? "?w=" + parseInt(width) : '';
   var attributesStr = "";
   for(var i=0; i < Object.keys(attributes).length; i++){
