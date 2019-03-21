@@ -73,7 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	const renderOptions = {
 		renderNode: {
 			["embedded-asset-block"]: function(node){
-				return renderContentfulImage(node, 150, {"class":"img-thumbnail", "data-toggle":"modal", "data-target":"#imageModal", "data-image":node.data.target.fields.file.url, style:"cursor:pointer"});
+				var f = node.data.target.fields;
+				return `<img src="${f.file.url}?w=150" alt="${f.title}" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-image="${f.file.url}" />`;
 			}
 		}
 	};
