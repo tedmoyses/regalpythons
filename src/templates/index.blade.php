@@ -5,22 +5,28 @@
 
 @section('content')
 
+<?php
+$client = new \Contentful\Delivery\Client($contentfulApiKey, $contentfulSpaceId, $contentfulEnvironment);
+
+$query = new \Contentful\Delivery\Query();
+$query->setContentType('homepage');
+
+$content = $client->getEntries($query);
+
+?>
+
 <div id="carouselHero" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="carouselHero" data-slide-to="0" class="active" ></li>
-    <li data-target="carouselHero" data-slide-to="1" ></li>
-    <li data-target="carouselHero" data-slide-to="2" ></li>
+	<ol class="carousel-indicators">
+		@foreach($content[0]->getCarousel() as $index => $image)
+		<li data-target="carouselHero" data-slide-to="{{ $index }}" class="{{ $index === 0 ? 'active' : ''}}" ></li>
+		@endforeach
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/assets/images/slide1.jpg" alt="first slide" class="d-block w-100" />
+	<div class="carousel-inner">
+		@foreach($content[0]->getCarousel() as $index => $image)
+    <div class="carousel-item {{$index === 0 ? 'active' : ''}}">
+      <img src="{{ $image->getFile()->getUrl() }}" alt="first slide" class="d-block w-100" />
     </div>
-     <div class="carousel-item">
-      <img src="/assets/images/slide2.jpg" alt="second slide" class="d-block w-100" />
-    </div>
-      <div class="carousel-item ">
-      <img src="/assets/images/slide3.jpg" alt="third slide" class="d-block w-100" />
-		</div>
+		@endforeach
     <div class="text-center text-white hero-text font-weight-bold" >
 			<div class="col-md-9 mx-auto py-5">
         <h2>What we do</h2>
@@ -36,7 +42,7 @@
 <div class="container-fluid">
  <div class="row">
     <div class="col-md-7 pl-0">
-      <img src="/assets/images/index_orange3.jpg" alt="" class="img-fluid" />
+      <img src="{{ $content[0]->getAvailable()->getFile()->getUrl() }}" alt="" class="img-fluid" />
     </div>
     <div class="col-md-5 d-flex">
       <div class="mx-auto justify-content-center align-self-center text-center">
@@ -46,7 +52,7 @@
           Morph ID: 2013-HETLAV-01<br>
           Hatch Date: 2013-11-04<br>
           Dam: 2007-HLAV-01<br>
-          <span class="orange-text">See available @include('arrow')</span>
+          <a href="/available.html" class="orange-text">See available @include('arrow')</a>
         </p>
       </div>
     </div>
@@ -54,7 +60,7 @@
   <div class="row">
     <div class="col-md-5 d-flex">
       <div class="mx-auto justify-content-center align-self-center text-center">
-        <h2 class="orange-text">World first pictures</h2>
+        <h2 class="orange-text">World Firsts</h2>
         <p>Take a look at our stunning world<br>
           firsts produced here at Regal Pythons<br>
 					<a href="/gallery.html" class="orange-text">Gallery @include('arrow')</a>
@@ -62,7 +68,7 @@
       </div>
     </div>
     <div class="col-md-7 pr-0" />
-      <img src="/assets/images/index_yellow1.jpg" class="img-fluid" />    
+      <img src="{{ $content[0]->getWorldfirsts()->getFile()->getUrl() }}" class="img-fluid" />    
    </div>
   </div>
 </div>

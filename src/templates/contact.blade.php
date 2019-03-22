@@ -11,13 +11,14 @@
       <h2>Contact us</h2>
 
       <p>
-        Contact us on our facebook page or messenger 
+        To chat via messenger, connect with us on Facebook
         <a href="https://m.facebook.com/regalpythons" class="d-md-none">facebook.com/regalpythons</a>
         <a href="https://www.facebook.com/regalpythons" class="d-none d-md-inline">facebook.com/regalpythons</a>
       </p>
 
       <p>
-       Alternatively you can <a href="mailto:regal@regalpythons.com">Email us</a>
+				To enquire about available animals, ask about our projects or to explore payment options and shipping options, drop us an email
+				<a href="mailto:regal@regalpythons.com" class="d-block">Email us</a>
       </p>
 
     </div>
