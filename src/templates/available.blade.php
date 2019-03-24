@@ -28,9 +28,9 @@ $animals = $client->getEntries($query);
 						<img src="{{ $animal->getImage()->getFile()->getUrl() }}" alt="{{ $animal->getMorphtitle() }}" class="img-fluid pb-4" data-toggle="modal" data-target="#imageModal" data-image="{{ $animal->getImage()->getFile()->getUrl() }}" style="cursor:pointer"/>
 						<b class="d-inline-block pb-4">{{ $animal->getMorphtitle() }}</b>
 						<table class="table">
-							<tr><td class="orange-text ">Weight:</td>     <td class="" >{{ $animal->getWeight() }}g</td></tr>
-							<tr><td class="orange-text ">MorphId:</td>     <td class="" >{{ $animal->getMorphid() }}g</td></tr>
-							<tr><td class="orange-text ">Hatch date:</td> <td class="" >{{ $animal->getHatchdate() }}g</td></tr>
+							<tr><td class="orange-text ">Weight:</td>     <td class="" >{{ $animal->getWeight() }}</td></tr>
+							<tr><td class="orange-text ">MorphId:</td>     <td class="" >{{ $animal->getMorphid() }}</td></tr>
+							<tr><td class="orange-text ">Hatch date:</td> <td class="" >{{ $animal->getHatchdate() }}</td></tr>
 						</table>			
 					</div>
 					<p class="footer d-flex justify-content-between">
