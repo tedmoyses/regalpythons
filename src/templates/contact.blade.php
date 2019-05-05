@@ -8,7 +8,11 @@
 <div class="container">
   <div class="row">
     <div class="col-12 py-5">
-      <h2>Contact us</h2>
+			<h2>Contact us</h2>
+
+			<p>
+				Contact us on MeWe at <a href="https://mewe.com/i/markregal" title="contact us on me we">mewe.com/i/markregal</a>
+			</p>
 
       <p>
         To chat via messenger, connect with us on Facebook
