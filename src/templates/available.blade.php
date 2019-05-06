@@ -23,14 +23,14 @@ $animals = $client->getEntries($query);
 			<p class="col-12">We really wish we could keep them all, but take great pleasure in our customers joy when their acquisitions arrive, and go on to produce offspring of their own</p>
 			<p class="col-12">Let us know if you have any questions and we hope we can help with your next step in the hobby</p>
       @forelse ($animals as $animal)
-				<div class="col-md-3 snake-card p-3" >
-				<div class="inner bg-white p-3">  
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 snake-card p-md-2 p-3" >
+				<div class="inner bg-white p-md-2 p-3">  
 						<img src="{{ $animal->getImage()->getFile()->getUrl() }}" alt="{{ $animal->getMorphtitle() }}" class="img-fluid pb-4" data-toggle="modal" data-target="#imageModal" data-image="{{ $animal->getImage()->getFile()->getUrl() }}" style="cursor:pointer"/>
 						<b class="d-inline-block pb-4">{{ $animal->getMorphtitle() }}</b>
-						<table class="table">
+						<table class="table table-sm">
 							<tr><td class="orange-text ">Weight:</td>     <td class="" >{{ $animal->getWeight() }}</td></tr>
 							<tr><td class="orange-text ">MorphId:</td>     <td class="" >{{ $animal->getMorphid() }}</td></tr>
-							<tr><td class="orange-text ">Hatch date:</td> <td class="" >{{ $animal->getHatchdate() }}</td></tr>
+							<tr><td class="orange-text ">Hatch date:</td> <td class="" >{{ date( 'Y-m-d', strtotime($animal->getHatchdate())) }}</td></tr>
 						</table>			
 					</div>
 					<p class="footer d-flex justify-content-between">
