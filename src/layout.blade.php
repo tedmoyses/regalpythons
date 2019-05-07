@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Regal Pythons - exotic rare breed royal pythons - @yield('title')</title>
+  <title>Regal Pythons - Ball Pythons, designed for life - @yield('title')</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
 	@style(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css)

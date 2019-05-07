@@ -2,9 +2,9 @@
   <div class="footer">
 
     <div class="item mx-sm-auto d-sm-inline-block">
-      <a href="https://facebook.com/regalpythons"><img src="/assets/images/Facebook-05.svg" alt="" class="icon" style="width:40%" /></a>
+      <a href="https://www.facebook.com/regalpythons"><img src="/assets/images/Facebook-05.svg" alt="" class="icon" style="width:40%" /></a>
       Follow us on facebook<br>
-			<a href="https://facebook.com/reglalpythons" class="orange-text">LIKE @include('arrow')</a>
+			<a href="https://www.facebook.com/reglalpythons" class="orange-text">LIKE @include('arrow')</a>
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">
@@ -14,9 +14,9 @@
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">
-      <a href="https://facebook.com/regalpythons"><img src="/assets/images/Insta-04.svg" alt="" class="icon" /></a>
+      <a href="https://www.instagram.com/regalpythons/"><img src="/assets/images/Insta-04.svg" alt="" class="icon" /></a>
       Latest images on insta<br>
-      <a href="https://facebook.com/reglalpythons" class="orange-text">FOLLOW @include('arrow')</a>
+      <a href="https://www.instagram.com/regalpythons/" class="orange-text">FOLLOW @include('arrow')</a>
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">

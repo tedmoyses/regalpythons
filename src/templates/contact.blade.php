@@ -25,7 +25,17 @@
 	        <a href="https://m.facebook.com/regalpythons" class="d-md-none">facebook.com/regalpythons</a>
 					<a href="https://www.facebook.com/regalpythons" class="d-none d-md-inline">facebook.com/regalpythons</a>
 				</div>
-      </p>
+			</p>
+
+			<p>
+				Check us out on Instagram and give us a follow 
+				<a href="https://www.instagram.com/regalpythons" title="Our instagram page" class="d-block">Instagram</a>
+			</p>
+
+			<p>
+				Shop for our animals on MorphMarket 
+				<a href="https://www.morphmarket.com/stores/regalpythonsuk/?cat=reps" title="Our MorphMarket page" class="d-block">MorphMarket</a>
+			</p>
 
     </div>
   </div>
