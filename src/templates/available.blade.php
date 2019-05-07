@@ -19,7 +19,7 @@ $animals = $client->getEntries($query);
 <div class="container-fluid bg-light p-5">
   <div class="row">
 			<h1 class="col-12">Available animals</h1>
-			<p class="col-12">As a hobbist breeder working on very specific projects, from time to time we have exceptional surplus animals for sale.</p>
+			<p class="col-12">As a hobbyist breeder working on very specific projects, from time to time we have exceptional surplus animals for sale.</p>
 			<p class="col-12">We really wish we could keep them all, but take great pleasure in our customers joy when their acquisitions arrive, and go on to produce offspring of their own</p>
 			<p class="col-12">Let us know if you have any questions and we hope we can help with your next step in the hobby</p>
       @forelse ($animals as $animal)

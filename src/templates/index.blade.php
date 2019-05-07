@@ -31,7 +31,7 @@ $content = $client->getEntries($query);
 			<div class="col-md-9 mx-auto py-5">
         <h2>What we do</h2>
         <p>
-					Regal Pythons is a hobbyist Ball Python breeder focussing on combining recessive genes to produce bright, high contrast combinations that retain their brilliance through life <br>
+					Regal Pythons is a Ball Python breeder combining recessive genes to produce bright, high contrast combinations that retain their brilliance through life <br>
           <a href="/available.html" class="orange-text">See availability @include('arrow')</a>
         </p>
       </div>
