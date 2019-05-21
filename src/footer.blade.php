@@ -4,7 +4,7 @@
     <div class="item mx-sm-auto d-sm-inline-block">
       <a href="https://www.facebook.com/regalpythons"><img src="/assets/images/Facebook-05.svg" alt="" class="icon" style="width:40%" /></a>
       Follow us on facebook<br>
-			<a href="https://www.facebook.com/reglalpythons" class="orange-text">LIKE @include('arrow')</a>
+			<a href="https://www.facebook.com/regalpythons" class="orange-text">LIKE @include('arrow')</a>
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">
