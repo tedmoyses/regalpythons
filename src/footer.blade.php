@@ -10,7 +10,7 @@
     <div class="item mx-sm-auto d-sm-inline-block">
 		  <a href="mailto:regal@regalpythons.com"><img src="/assets/images/@-01.svg" alt="" class="icon" /></a>
       Contact us for more info<br >
-      <a href="mailto:regal@regalpyhtons.com" class="orange-text">CONTACT @include('arrow')</a>
+      <a href="mailto:regal@regalpythons.com" class="orange-text">CONTACT @include('arrow')</a>
     </div>
 
     <div class="item mx-sm-auto d-sm-inline-block">
